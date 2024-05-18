@@ -10,8 +10,10 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // functions from contact reducer
-import { contactSelector, deleteContactThunk, 
-        setShowContact, updateContactThunk } from "../Redux/Reducers/contactReducer";
+import {
+    contactSelector, deleteContactThunk,
+    setShowContact, updateContactThunk
+} from "../Redux/Reducers/contactReducer";
 
 
 
@@ -121,6 +123,7 @@ const UpdateSection = () => {
         toast.success('Contact is removed from the List !!');
         setIsChanged(false);
     }
+
 
 
     // render the update contact section
@@ -289,7 +292,7 @@ const UpdateSection = () => {
             </button>
 
             {/* button for delete the contact */}
-            <button className="float-right bg-red-500 p-[2px] 
+            <button className="float-right bg-red-500 md: 16px p-[8px] 
                             rounded text-white mt-1 shadow-md" 
                     onClick={handleDelete}>
                 Delete
